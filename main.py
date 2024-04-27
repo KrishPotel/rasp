@@ -1,6 +1,7 @@
-import RPIO
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
 
-RPIO.setup(21, RPIO.OUT)
-
-# set gpio 21 to high
-RPIO.output(21, True)
+red = 18
+GPIO.setup(red, GPIO.OUT)
+GPIO.output(red, GPIO.LOW)
