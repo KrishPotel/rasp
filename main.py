@@ -4,4 +4,5 @@ GPIO.setwarnings(False)
 
 red = 21
 GPIO.setup(red, GPIO.OUT)
-GPIO.output(red, GPIO.HIGH)
+while True:
+    GPIO.output(red, GPIO. HIGH)
