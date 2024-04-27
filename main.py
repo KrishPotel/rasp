@@ -1,6 +1,6 @@
-import gpio
+import RPIO
 
-gpio.setup(21,gpio.OUT)
+RPIO.setup(21, RPIO.OUT)
 
-while True:
-    gpio.output(21,gpio.HIGH)
+# set gpio 21 to high
+RPIO.output(21, True)
